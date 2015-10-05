@@ -1,0 +1,160 @@
+html {
+    background: linear-gradient(#CECCBF,#A9510B);
+    font-size: 10pt;
+    font-family: "San Francisco", sans-serif;
+    overflow-y: scroll;
+}
+body {
+    padding: 0px;
+}
+.todoDiv {
+    width: 815px;
+    position: relative;
+    left: 50%;
+    margin-left: -410px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2),
+    inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.addProjectForm {
+    width: 469px;
+    position: relative;
+    left: 50%;
+    margin-left: -230px;
+}
+.button {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#94CBAE,#508767);
+    color: #fff;
+    padding: 5px;
+    margin-right: 0;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.table {
+    width: auto;
+    text-align: left;
+    border-radius: 5px;
+    border: 10px;
+    border-collapse: collapse;
+    display: inline;
+    word-break: break-all;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+input:not([type=submit]) {
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+input:required:invalid,
+input:not(required):invalid,
+input:focus:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNpi/P//PwMpgImBRMACY/x7/uDX39sXt/67cMoDyOVgMjBjYFbV/8kkqcCBrIER5KS/967s+rmkXxzI5wJiRSBm/v8P7NTfHHFFl5mVdIzhGv4+u///x+xmuAlcdXPB9KeqeLgYd3bDU2ZpRRmwH4DOeAI07QXIRKipYPD35184/nn17CO4p/+cOfjl76+/X4GYAYThGn7/g+Mfh/ZZwjUA/aABpJVhpv6+dQUjZP78Z0YEK7OezS2gwltg64GmfTu6i+HL+mUMP34wgvGvL78ZOEysf8M1sGgZvQIqfA1SDAL8iUUMPIFRQLf+AmMQ4DQ0vYYSrL9vXDz2sq9LFsiX4dLRA0t8OX0SHKzi5bXf2HUMBVA0gN356N7p7xdOS3w5fAgcfNxWtn+BJi9gVVBOQfYPQIABABvRq3BwGT3OAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+input:required:valid,
+input[name=password]:not(required):valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZZJREFUeNpi/P//PwMpgImBRMAy58QshrNPTzP8+vOLIUInisFQyYjhz98/DB9/fmT48/+35v7H+8KNhE2+WclZd+G0gZmJmYGThUNz1fUVMZtvbWT59eUXG9wGZIWMUPj993eJ5VeWxuy8veM/CzPL3yfvH/9H0QBSBDYZyOVm4mGYfn6q4cory5lYmFh+MrEwM/76/YsR7mk2ZjbWP///WP37/y8cqIDhx58fjvtu7XV6//ndT34G/v8FasUsDjKO/+A2PP3wpGLd+TVsfOz8XH6KAT+nHpokcu7h6d9q/BoMxToVbBYqlt9///+1GO4/WVdpXqY/zMqXn13/+vTjI9mj94/y//v9/3e9ZRObvYbDT0Y2xnm///x+wsfHB3GSGLf41jb3rv0O8nbcR66d+HPvxf2/+YZFTHaqjl8YWBnm/vv37yly5LL8+vuLgYuVa3uf/4T/Kd8SnSTZpb6FGUXwcvJxbAPKP2VkZESNOBDx8+9PBm4OwR1TwmYwcfzjsBUQFLjOxs52A2YyKysrXANAgAEA7buhysQuIREAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat
+}
+span {
+    font-size: 20px;
+    alignment: center;
+    vertical-align: middle;
+}
+.taskCompleted-true {
+    text-align: left;
+    width: 669px;
+    height: 42px;
+    color: #9A9A9A;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.taskCompleted-false {
+    text-align: left;
+    width: 669px;
+    height: 42px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+.logOut {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    max-width: 150px;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+td {
+    font-size: 10pt;
+}
+.highTr {
+    font-size: 10pt;
+    color: #ffffff;
+    background: linear-gradient(#5586C0,#3A619C);
+}
+.focus {
+    background: #ffd8b5;
+}
+.noFocus {
+    background: #ffffff;
+}
+.localeUrls {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+#addProjectButtonDiv {
+    text-align: center;
+}
+#addProjectButton {
+    background: linear-gradient(#5085BA,#365FA0);
+}
+#todo_label {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.addTaskButton {
+    width: 112px;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+.taskImg {
+    vertical-align: middle;
+}
+.deleteProject {
+    float: right;
+}
+.deleteProjectTh {
+    width: 50px;
+}
+.taskIcons {
+    float: right;
+}
+.taskIconsTd {
+    width: 108px;
+}
+.firstTd {
+    width: 20px;
+}
+.projectNameTh {
+    width: 695px;
+}

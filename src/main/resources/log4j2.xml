@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Properties>
+        <Property name="log-path">D:/Develop/=taskmanager_logs</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="file" fileName="${log-path}/log.log"
+                     filePattern="${log-path}/log-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{HH:mm:ss.SSS} %-5level %logger{2} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="trace">
+            <appender-ref ref="console" level="trace"/>
+            <appender-ref ref="file" level="trace"/>
+        </Root>
+    </Loggers>
+</Configuration>
