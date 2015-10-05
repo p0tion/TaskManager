@@ -7,8 +7,7 @@
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.show_sql">false</property>
         <property name="hibernate.format_sql">true</property>
-        <property name="hibernate.hbm2ddl.auto">validate</property>
-        <!--<property name="hibernate.hbm2ddl.auto">create</property>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="com.antontulskih.domain.Task" />
         <mapping class="com.antontulskih.domain.Project" />
         <mapping class="com.antontulskih.domain.User" />

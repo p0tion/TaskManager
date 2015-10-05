@@ -40,7 +40,7 @@ public class AuthentificationController {
         binder.setValidator(validator);
     }
 
-    @RequestMapping(value = {"", "signIn"})
+    @RequestMapping(value = {"", "signIn", "signOut"})
     public String showSignInPage(HttpSession session) {
         logger.trace("Inside showSignInPage()");
         if (session.getAttribute("userId") != null) {
@@ -51,7 +51,7 @@ public class AuthentificationController {
         return "signIn";
     }
 
-    @RequestMapping(value = {"signIn", "signOut"}, method = RequestMethod.POST)
+    @RequestMapping(value = "signIn", method = RequestMethod.POST)
     public String signInRequestForm(@RequestParam String login,
                                     @RequestParam String password,
                                     HttpSession session,
